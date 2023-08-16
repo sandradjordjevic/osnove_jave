@@ -15,7 +15,7 @@ public class Zadatak9 {
         String nazivFajla = "profile-image.png";
         int velicinaOriginalnogFajla = 7;
         int velicinaSkinutogFajla = 2;
-        int procenat = 28;
+        int procenat = velicinaSkinutogFajla * 100 / velicinaOriginalnogFajla;
         System.out.println(nazivFajla + " " + velicinaOriginalnogFajla + "Mb/" + velicinaSkinutogFajla + "Mb");
         System.out.println("***********************************");
         System.out.println("**********" + procenat + "%");
