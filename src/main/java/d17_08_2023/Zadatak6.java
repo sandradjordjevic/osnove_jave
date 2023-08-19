@@ -21,43 +21,30 @@ public class Zadatak6 {
 
         System.out.println("Unesite broj d: ");
         int d = s.nextInt();
-
-        if(a > 0) {
-            p = p + " " + a;
-            if(b > 0) {
-                p = p + " " + b;
-            } else {
-                p = b + " " + p;
-            }
-            if(c > 0) {
-                p = p + " " + c;
-            } else {
-                p = c + " " + p;
-            }
-            if(d > 0) {
-                p = p + " " + d;
-            }  else {
-                p = d + " " + p;
-            }
-            System.out.println(p);
-        } else {
+        if (a < 0) {
             p = a + " " + p;
-            if(b > 0) {
-                p = p + " " + b;
-            } else {
-                p = b + " " + p;
-            }
-            if(c > 0) {
-                p = p + " " + c;
-            } else {
-                p = c + " " + p;
-            }
-            if(d > 0) {
-                p = p + " " + d;
-            }  else {
-                p = d + " " + p;
-            }
-            System.out.println(p);
         }
+        if (a > 0) {
+            p = p + " " + a;
+        }
+        if (b < 0) {
+            p = b + " " + p;
+        }
+        if (b > 0) {
+            p = p + " " + b;
+        }
+        if (c < 0) {
+            p = c + " " + p;
+        }
+        if (c > 0) {
+            p = p + " " + c;
+        }
+        if (d < 0) {
+            p = d + " " + p;
+        }
+        if (d > 0) {
+            p = p + " " + d;
+        }
+        System.out.println(p);
     }
 }
