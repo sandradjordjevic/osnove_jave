@@ -20,13 +20,14 @@ public class Student {
         this.ispiti.add(ispit);
     }
     public double izracunajProsek () {
-        double ispit = 0;
+        double ispit = 0, brojPolozenih = 0;
         for (int i = 0; i < this.ispiti.size(); i++) {
-            if (this.ispiti.get(i).getOcena() > 5) {
+            if (this.ispiti.get(i).daLiJeIspitPolozen()) {
                 ispit += this.ispiti.get(i).getOcena();
+                brojPolozenih++;
             }
         }
-        return ispit / this.ispiti.size();
+        return ispit / brojPolozenih;
     }
     public void stampaj () {
         System.out.println(this.getBrojIndexa() + ", " + this.getImePrezime() + ", " + this.getTipStudija());
